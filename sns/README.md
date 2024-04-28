@@ -15,7 +15,7 @@
 - 때문에 AWS 서비스를 이용하고 있을 때 특정 이벤트가 발생하는 경우 SNS를 이용하여 특정 기능을 실행시킬 수 있다.
 
 
-> [AWS SNS > 이벤트 소스](https://docs.aws.amazon.com/ko_kr/sns/latest/dg/sns-event-sources.html#sns-event-sources-storage)
+> [AWS SNS > 이벤트 소스](https://docs.aws.amazon.com/ko_kr/sns/latest/dg/sns-event-sources.html#sns-event-sources-storage) <br/>
 > [Amazon SNS를 통한 이벤트 기반 컴퓨팅으로 AWS 주요 서비스 활용하기](https://aws.amazon.com/ko/blogs/korea/event-driven-computing-with-amazon-sns-compute-storage-database-and-networking-services/)
 
 
@@ -68,7 +68,5 @@
 - 하지만 만약 메시지를 삭제하지 않고 다시 리드라이브를 하기 위해서는 DLQ를 설정을 해야한다.
 - DLQ 설정은 SNS 토픽이 아닌 SNS 구독자별로 연결된다.
 
-> [AWS SNS > DLQ](https://docs.aws.amazon.com/ko_kr/sns/latest/dg/sns-dead-letter-queues.html)
-
-
+> [AWS SNS > DLQ](https://docs.aws.amazon.com/ko_kr/sns/latest/dg/sns-dead-letter-queues.html) <br/>
 > https://birdgang82.medium.com/aws-service-communication-amazonsns-dff3ab3b17b6
