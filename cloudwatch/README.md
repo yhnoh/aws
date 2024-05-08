@@ -20,8 +20,17 @@
 - 지표를 측정하기 위한 측정 기준으로 활용되며, 여러 리소스들중 내가 원하는 리소스 묶음들을 구분하기 위한 용도로도 활용된다.
   - AWS에서 사용하는 여러 리소스들을 특정 단위의 묶음으로 검색하고자 할 때, 차원을 활용하여 검색이 가능하다.
   - 일치하는 값 뿐만아니라 필터링하고자하는 값 또한 측정이 가능하다.
-4. 경보
-5. 
+4. 경보 (Alarm)
+- 지표에 대한 값이 ***사용자가 지정한 임계치를 넘었을 경우 특정 트리거를 일으킬 수 있는 것이 경보***이다.
+- 지표의 값이 지속적으로 유지되어야 경보가 일어나며, 단순히 특정 값이 있다고 해서 호출되지는 않는다.
+- 24시간 리소르를 사람이 모니터링 할 수 없기 때문에 경보는 다음과 같은 역할을 할 수 있다.
+  - 경보 발생시 사용자에게 알림(이메일, 슬랙...)을 전달함
+  - 경보 발생시 후처리에 대한 자동화 가능
+  - 경보 상태에 따라서 Lamda, EC2, AutoScaling 등 정책 설정이 가능
+> [AWS > 경보](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+
+- stress
+1. 
 
 > [AWS > Amazon CloudWatch 개념](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html#Dimension)
 
