@@ -1,0 +1,37 @@
+{
+	"agent": {
+        "metrics_collection_interval": 60,
+        "logfile": "/opt/aws/amazon-cloudwatch-agent/logs/amazon-cloudwatch-agent.log"
+	},
+	"metrics": {
+		"metrics_collected": {
+            "cpu": {
+                "resources": [
+                    "*"
+                ],
+                "measurement": [
+                    "usage_active"   
+                ]
+            },
+			"mem": {
+				"measurement": [
+					"used_percent"
+				]
+			},
+			"disk": {
+				"resources": [
+					"*"
+				],
+                "measurement": [
+					"used_percent"
+				]
+			}
+		},
+		"append_dimensions": {
+			"ImageId": "${aws:ImageId}",
+			"InstanceId": "${aws:InstanceId}",
+			"InstanceType": "${aws:InstanceType}",
+			"AutoScalingGroupName": "${aws:AutoScalingGroupName}"
+		}
+	}
+}
