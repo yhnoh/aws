@@ -14,7 +14,7 @@ sudo snap services amazon-ssm-agent
 
 ```
 
-> [AWS > Linux용 EC2 인스턴스에 수동으로 SSM Agent 설치 및 제거](https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/manually-install-ssm-agent-linux.html)
+> [AWS > Linux용 EC2 인스턴스에 수동으로 SSM Agent 설치 및 제거](https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/manually-install-ssm-agent-linux.html) <br/>
 > [AWS > SSM Agent 업데이트 자동화](https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/ssm-agent-automatic-updates.html)
 
 2. Ubuntu에 AWS CLI 설치
@@ -63,8 +63,8 @@ aws --version
 - AWS CloudWatch에 들어가서 지표가 잘 수집되고 있는지 확인
 
 
-> [AWS > CloudWatch 에이전트 다운로드 및 구성](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/download-CloudWatch-Agent-on-EC2-Instance-SSM-first.html)
-> [AWS > 수동으로 CloudWatch 에이전트 구성 파일 생성 또는 편집](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-Configuration-File-Details.html)
+> [AWS > CloudWatch 에이전트 다운로드 및 구성](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/download-CloudWatch-Agent-on-EC2-Instance-SSM-first.html)<br/>
+> [AWS > 수동으로 CloudWatch 에이전트 구성 파일 생성 또는 편집](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-Configuration-File-Details.html)<br/>
 > [AWS > CloudWatch 에이전트가 수집하는 지표](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html)
 
 
