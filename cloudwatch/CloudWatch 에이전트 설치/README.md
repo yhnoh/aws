@@ -1,4 +1,6 @@
-1. Ubuntu에 AWS SystemManager Agent 설치
+## 1. SystmeManager를 이용한 CloudWatch Agent 설치
+
+### 1.1. Ubuntu에 AWS SystemManager Agent 설치
 ```sh
 ## ssm agent 설치
 sudo snap install amazon-ssm-agent --classic
@@ -17,7 +19,7 @@ sudo snap services amazon-ssm-agent
 > [AWS > Linux용 EC2 인스턴스에 수동으로 SSM Agent 설치 및 제거](https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/manually-install-ssm-agent-linux.html) <br/>
 > [AWS > SSM Agent 업데이트 자동화](https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/ssm-agent-automatic-updates.html)
 
-2. Ubuntu에 AWS CLI 설치
+### 1.2. Ubuntu에 AWS CLI 설치
 ```sh
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 sudo apt install unzip
@@ -28,7 +30,7 @@ aws --version
 
 > [AWS > 최신 버전의 AWS CLI설치 또는 업데이트](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/getting-started-install.html)
 
-3. SystemManager와 CloudWatch Agent를 사용하기 위한 역할 구성
+### 1.3. SystemManager와 CloudWatch Agent를 사용하기 위한 역할 구성
 
 - 역할에 필요한 정책
     - AmazonSSMManagedInstanceCore
@@ -37,7 +39,7 @@ aws --version
 
 > [AWS > Systems Manager에 대한 인스턴스 권한 구성](https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/setup-instance-permissions.html) 
 
-4. SystemManager를 사용하여 CloudWatch Agent 다운로드 및 구성
+### 1.4. SystemManager를 사용하여 CloudWatch Agent 다운로드 및 구성
 
 - SystemManager > 노드 관리 > 플릿 관리자에서 EC2에 SSM 설치가 되었는지 확인
 - CloudWatch Agent를 설치하기 전에 System Manger를 이용하여 EC2가 명령을 수행하는지 확인
@@ -68,4 +70,9 @@ aws --version
 > [AWS > CloudWatch 에이전트가 수집하는 지표](https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/metrics-collected-by-CloudWatch-agent.html)
 
 
+## 2. Private EC2 인스턴스에서 SystmeManager 이용하기
+
+
+> [AWS > VPC 엔드포인트 생성](https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/setup-create-vpc.html) <br/>
+> [AWS > How do I create VPC endpoints so that I can use Systems Manager to manage private EC2 instances without internet access?](https://repost.aws/ko/knowledge-center/ec2-systems-manager-vpc-endpoints)
 
