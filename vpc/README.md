@@ -1,9 +1,4 @@
-
-
-![](./img/diagram.png)
-
-
-## 1. Public/Private Subnet 구성하기 전 알아야할 간단한 개념
+## 1. AWS 네트워크를 구성하기 위하여 알아야할 간단한 개념
 
 ### 1.1. VPC (Virtual Private Cloud)
 
