@@ -1,0 +1,8 @@
+services:
+  lambda_nodejs_20:
+    image: public.ecr.aws/lambda/nodejs:20
+    command: app.handler
+    volumes:
+      - ./task:/var/task
+    ports:
+      - 8080:8080
