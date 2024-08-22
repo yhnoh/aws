@@ -1,0 +1,16 @@
+{
+  "name": "serverless-s3-upload",
+  "version": "1.0.0",
+  "main": "handler.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.143",
+    "serverless-plugin-typescript": "^2.1.5",
+    "typescript": "^5.5.4"
+  }
+}

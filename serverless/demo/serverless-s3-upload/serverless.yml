@@ -1,0 +1,28 @@
+
+
+service: serverless-s3-upload
+frameworkVersion: "3"
+
+plugins:
+  - serverless-plugin-typescript
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-northeast-2
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "s3:ListAllMyBuckets"
+        - "s3:GetBucketLocation"
+        - "s3:ListBuckets"
+        - "s3:GetObject"
+      Resource: "arn:aws:s3:::*"
+
+functions:
+  hello:
+    handler: handler.getBuckets
+    events:
+      - httpApi:
+          path: /buckets
+          method: get
