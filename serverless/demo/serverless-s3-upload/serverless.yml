@@ -20,9 +20,21 @@ provider:
       Resource: "arn:aws:s3:::*"
 
 functions:
-  hello:
+  getBuckets:
     handler: handler.getBuckets
     events:
       - httpApi:
           path: /buckets
+          method: get
+  getObjects:
+    handler: handler.getObjects
+    events:
+      - httpApi:
+          path: /buckets/{bucketName}/objects
+          method: get
+  getObject:
+    handler: handler.getObject
+    events:
+      - httpApi:
+          path: /buckets/{bucketName}/objects/{objectName}
           method: get
