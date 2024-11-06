@@ -7,3 +7,4 @@
 > https://docs.aws.amazon.com/en_kr/vpn/latest/clientvpn-admin/client-authentication.html
 > https://docs.aws.amazon.com/en_kr/vpn/latest/clientvpn-admin/split-tunnel-vpn.html
 > https://docs.aws.amazon.com/en_kr/vpn/latest/clientvpn-admin/connection-logging.html
+> https://blog.hbsmith.io/hbsmith%EA%B0%80-aws-client-vpn%EB%A1%9C-%EA%B0%88%EC%95%84%ED%83%84-%EC%9D%B4%EC%9C%A0-29119ecdc381
