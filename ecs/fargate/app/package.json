@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "app/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node app/index.ts",
+    "dev": "nodemon --watch 'app/**/*.ts' --exec 'ts-node' app/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.6",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2"
+  }
+}
