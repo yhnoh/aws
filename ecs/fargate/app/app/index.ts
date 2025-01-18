@@ -1,15 +1,16 @@
-import express from "express";
-
-const app = express();
-
-app.use(express.json());
-
-app.get("/", (request, response) => {
-    response.status(200).send("hello world")
-})
+import * as redis from "redis";
+import {createApp} from "./app";
 
 const PORT = 4000;
 
-app.listen(PORT, () => {
-    console.log(`start app by port ${PORT}`)
-})
+const startServer = async () => {
+    const client = redis.createClient({url: "redis://localhost:6379"});
+    await client.connect();
+
+    const app = createApp(client);
+    app.listen(PORT, () => {
+        console.log(`start app by port ${PORT}`)
+    });
+};
+
+startServer();
